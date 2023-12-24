@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-class ManachersAlgorothmTest {
+class ManachersAlgorithmTest {
 
     @ParameterizedTest
     @CsvSource(value = {"babcbabcbaccba,abcbabcba",
@@ -20,7 +20,7 @@ class ManachersAlgorothmTest {
             "a,a",
             "abcde,a"})
     void shouldFindPalindrome(String input, String expected) {
-        String actual = ManachersAlgorothm.longestPalindrome(input);
+        String actual = ManachersAlgorithm.longestPalindrome(input);
         Assertions.assertEquals(expected, actual);
     }
 }
